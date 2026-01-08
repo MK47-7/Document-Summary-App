@@ -13,7 +13,7 @@ logging.basicConfig(filename="app_log.txt", level=logging.INFO,
                     format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Gemini API configuration
-genai.configure(api_key="AIzaSyD1aD2SJt0X37T-Di6-sDUgFHHEfQE0IPY")
+genai.configure(api_key="---------------------------------")
 
 model = genai.GenerativeModel(
     model_name='gemini-2.0-flash',
@@ -142,3 +142,4 @@ if text_content:
         with st.spinner("Simplifying..."):
             simplified = simplify_text_section(text_content, section_prompt)
             st.write(simplified)
+
